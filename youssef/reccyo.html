@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .containeryo {
+            position: relative;
+        }
+
+        .rectangleyo {
+            width: 1054px;
+            height: 185px;
+            background-color: #3E3E3E;
+            position: absolute;
+            top: 200px;
+            left: 193px;
+            border-radius: 20px;
+            overflow: hidden; /* Ensure image does not exceed the rectangle */
+        }
+
+        .imageyo {
+            width: 250px; /* Make the image take up the left half */
+            height: 180px;
+            float: left;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-left: 240px;
+            
+        }
+
+        .buttonyo {
+            width: 297px;
+            height: 58px;
+            background-color: #ECB963;
+            color: #000000;
+            position: absolute;
+            top: 65px; /* Adjusted to vertically center button */
+            right: 40px; /* Adjusted to position on the right side */
+            line-height: 58px; /* Vertically center text */
+            text-align: center;
+            cursor: pointer;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containeryo">
+        <div class="rectangleyo">
+            <img src="volunteer.yo5.png" class="imageyo">
+            <a href="regVol.html" class="buttonyo">Register As Volunteer</a>
+        </div>
+    </div>
+</body>
+</html>

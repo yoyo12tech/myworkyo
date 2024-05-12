@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./homeDonor.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <title>Be Hope</title>
+    <style>
+      /* CSS to style the rectangle */
+      body{
+          /*background-color: rgba(3, 3, 3, 0.836) */
+      }
+      .rec {
+          width: 100%;
+          height: 100px; /* Set your desired height */
+          background-color: #EC9F4D; /* Set your desired background color */
+          border-top: 2px solid #000; /* Top border */
+          border-bottom: 2px solid #000; /* Bottom border */
+          border-left: 2px solid #000; /* Left border */
+          border-right: 2px solid #000; /* Right border */
+      }
+
+      .rec h1 {
+      color:#292929; /* Set text color */
+      font-size: 30px; /* Set font size */
+      font-weight: bold; /* Make text bold */
+      margin : 0;
+  }
+      .special-h1{
+      color: white; /* Set text color */
+      font-size: 40px; /* Set font size */
+      font-weight: bold; /* Make text bold */
+      margin : 0;
+  }
+  .special-p{
+      color: white; /* Set text color */
+      font-size: 20px; /* Set font size */
+      font-weight: bold; /* Make text bold */
+      margin : 0;
+      white-space: pre-wrap;
+      display: inline;
+  }
+
+  .invisible-b{
+      border: none; /* Remove border */
+      background: none; /* Remove background */
+      padding: 0; /* Remove padding */
+      font: inherit; /* Inherit font styles */
+      cursor: pointer; /* Add cursor pointer for hover effect */
+      color: white;
+      /* Additional styles if needed */
+  }
+  .donate-b{
+      padding: 30px;
+      position: absolute; /* Add absolute positioning */
+      font-size: 24px;
+      right: 10px; /* Adjust the button position to the right */
+      transform: translateX(-50%);
+      transform: translateY(-40%);
+      background-color:#6D6D6D;
+      color:white;
+  }
+
+  .searchbox{
+      font-size:25px;
+
+  }
+
+  .searchbutton{
+      height:35px;
+      width:60px;
+      transform: translateY(18%);
+      color:#6D6D6D;
+  }
+  .searchbutton img {
+      height: 100%; /* Make the image fill the button vertically */
+      width: auto; /* Maintain aspect ratio */
+  }
+
+  .filterbutton{
+      height:35px;
+      width:60px;
+      transform: translateY(18%);
+  }
+  .filterbutton img {
+      height: 100%; /* Make the image fill the button vertically */
+      width: auto; /* Maintain aspect ratio */
+  }
+  .itemicon {
+    height:35px;
+    width:60px;
+    transform: translateY(18%);
+    display: inline;
+  }
+
+  h1{
+    display: inline;
+  }
+  </style>
+
+  <script>
+       function getItem() {
+    var searchvalue = document.querySelector(".searchbox").value.trim().toLowerCase();
+    
+    var divs = document.querySelectorAll(".rec");
+
+    divs.forEach(function(div) {
+      var id = div.getAttribute("id");
+
+      if (id.toLowerCase() === searchvalue) {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    });
+
+  }
+    function Item(name ,type, state, quantity) {
+    this.name=name;
+    this.type = type;
+    this.state = state;
+    this.quantity = quantity;
+}
+
+  var steak = new Item("steak","Meat", "Frozen", 4);
+  var chicken = new Item("chicken","Meat", "Fresh", 6);
+  var strawberry = new Item("strawberry","Fruit", "Frozen", 3);
+  var mushroom = new Item("mushroom","Vegatable", "Canned", 2);
+  </script>
+
+
+  </head>
+
+
+  <body>
+    <div class="desktop-4">
+      
+     
+      <header class="menu-bar">
+        <div class="menu-bar-child"></div>
+        <div class="screenshot-2024-04-28-152415-u-parent">
+          <img
+            class="screenshot-2024-04-28-152415-u"
+            loading="lazy"
+            alt=""
+            src="./public/screenshot-20240428-152415-upscayl-3x-ultramix-balanced-1@2x.png"
+          />
+
+          <div class="button-menu-bar">
+            <div class="be-hope">Be Hope</div>
+          </div>
+        </div>
+        <div class="button-home-button-wrapper">
+          <div class="button-home-button">
+            <div class="button-1">
+              <div class="home">Home</div>
+            </div>
+            <div class="button-2">
+              <div class="about-us">About us</div>
+            </div>
+            <div class="button-3">
+              <div class="stories">Stories</div>
+            </div>
+          </div>
+        </div>
+        <div class="login-instance">
+          <button class="login-button">
+            <img class="component-icon" alt="" src="./public/component.svg" />
+
+            <div class="login-wrapper">
+              <div class="login">Login</div>
+            </div>
+          </button>
+          
+        
+        </div>
+       
+      </header>
+     
+      
+    </div>
+    
+   
+      
+
+      
+          
+
+      </div>
+      <div class="rectangle">
+    <div class="smallrec">
+    <div class="categories"><img class="icon" src="./public/ABC Block.svg" alt="An example image"></div>
+    <div class="categories"><img class="icon" src="./public/blood.png" alt="An example image"></div>
+    <div class="categories"><img class="icon" src="./public/sham3a.png" alt="An example image"></div>
+    <div class="categories"><img class="icon" src="./public/school.png" alt="An example image"></div>
+    <div class="categories"><img class="icon" src="./public/akl.png" alt="An example image"></div>
+    <div class="categories"><img class="icon" src="./public/medic.png" alt="An example image"></div>
+
+    </div>
+</div>
+      
+
+      
+
+
+  </body>
+</html>
+
